@@ -33,7 +33,6 @@ public class PlayerScript : MonoBehaviour
         {
             numOfStacks++;
             Destroy(other.gameObject);
-            print(numOfStacks);
         }
 
         if (other.GetComponent<Detacher>())
