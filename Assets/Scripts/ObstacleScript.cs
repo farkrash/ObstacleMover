@@ -5,11 +5,13 @@ using UnityEngine;
 public class ObstacleScript : MonoBehaviour
 {
     [SerializeField] private float moveBy = 10f;
+    [SerializeField] private float verticalMoveBy = 10f;
     [SerializeField] private float speed = 5f;
     [SerializeField] private bool useThis = false;
     [SerializeField] private bool moved = false;
     [SerializeField] private bool moveNow = false;
     private Vector3 destination;
+    [SerializeField] bool doIMoveVertically = false;
 
     private void Start()
     {
@@ -39,15 +41,31 @@ public class ObstacleScript : MonoBehaviour
  
         if (useThis)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (!doIMoveVertically)
             {
-                destination = new Vector3(transform.position.x - moveBy, transform.position.y, transform.position.z);
-                moveNow = true;
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    destination = new Vector3(transform.position.x - moveBy, transform.position.y, transform.position.z);
+                    moveNow = true;
+                }
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    destination = new Vector3(transform.position.x + moveBy, transform.position.y, transform.position.z);
+                    moveNow = true;
+                }
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            else
             {
-                destination = new Vector3(transform.position.x + moveBy, transform.position.y, transform.position.z);
-                moveNow = true;
+                if (Input.GetKeyDown(KeyCode.DownArrow))
+                {
+                    destination = new Vector3(transform.position.x, transform.position.y - verticalMoveBy, transform.position.z);
+                    moveNow = true;
+                }
+                if (Input.GetKeyDown(KeyCode.UpArrow))
+                {
+                    destination = new Vector3(transform.position.x, transform.position.y + verticalMoveBy, transform.position.z);
+                    moveNow = true;
+                }
             }
         }
     }

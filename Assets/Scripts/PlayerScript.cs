@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private GameObject block;
     [SerializeField] private GameObject playerMesh;
     [SerializeField] private Transform blockSpawnPoint;
-    [SerializeField] private List<GameObject> blockList = new List<GameObject>();
+    
     
 
     private void Awake()
@@ -47,7 +47,7 @@ public class PlayerScript : MonoBehaviour
         if(playerHight < numOfStacks)
         {
             playerMesh.transform.position = new Vector3(playerMesh.transform.position.x, playerMesh.transform.position.y + 0.25f, playerMesh.transform.position.z);
-            blockList.Add(Instantiate(block, blockSpawnPoint.position, transform.rotation , blockSpawnPoint.parent));
+            Instantiate(block, blockSpawnPoint.position, transform.rotation , blockSpawnPoint.parent);
             playerHight++;
         }
     }
