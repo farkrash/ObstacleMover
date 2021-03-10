@@ -13,22 +13,10 @@ public class SpringLogic : MonoBehaviour
 
     private void Update()
     {
-        MoveObstacle();
-        if (moveNow)
-        {
-            transform.position = Vector3.Lerp(transform.position, destination, speed);
-        }
+        SpringDir();
+        SpringMoveNow();
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-       if(collision.rigidbody != null)
-       {
-            Rigidbody rb = collision.rigidbody;
-            print(collision);
-            rb.AddForce(Vector3.up * force);
-       }
-    }
-
+  
     private void OnTriggerEnter(Collider other)
     {
         useThis = true;
@@ -38,7 +26,7 @@ public class SpringLogic : MonoBehaviour
     {
         useThis = false;
     }
-    private void MoveObstacle()
+    private void SpringDir()
     {
 
         if (useThis)
@@ -53,6 +41,14 @@ public class SpringLogic : MonoBehaviour
                 destination = new Vector3(transform.position.x + moveBy, transform.position.y, transform.position.z);
                 moveNow = true;
             }
+        }
+    }
+
+    private void SpringMoveNow()
+    {
+        if (moveNow)
+        {
+            transform.position = Vector3.Lerp(transform.position, destination, speed);
         }
     }
 }

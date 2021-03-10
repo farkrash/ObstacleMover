@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stackable
   - Blocks
+  - Spring
   layers:
   - Default
   - TransparentFX

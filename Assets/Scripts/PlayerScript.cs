@@ -5,51 +5,51 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     [SerializeField] private float speed = 15f;
-    [SerializeField] private int numOfStacks = 0;
-    [SerializeField] private int playerHight = 0;
+    [SerializeField] private float jumpSpeed = 15f;
     [SerializeField] private GameObject block;
-    [SerializeField] private GameObject playerMesh;
     [SerializeField] private Transform blockSpawnPoint;
-    
-    
+    [SerializeField] private bool jump = false;
+    [SerializeField] private float raiseBy = 1.5f;
 
-    private void Awake()
-    {
-        
-    }
-    private void Start()
-    {
-        
-    }
     void Update()
     {
+        PlayerMovment();
+    }
+
+    private void PlayerMovment()
+    {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        AddToStack();
+
+        if (jump)
+        {
+            transform.Translate(Vector3.up * jumpSpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Stackable"))
         {
-            numOfStacks++;
+            AddToStack();
             Destroy(other.gameObject);
         }
 
-        if (other.GetComponent<Detacher>())
+        if (other.gameObject.CompareTag("Spring"))
         {
-            int hight = other.GetComponent<Detacher>().obstacleHight;
-            
+            jump = true;
+            Invoke("JumpToFalse", 1f);
         }
+    }
+
+    private void JumpToFalse()
+    {
+        jump = false;
     }
 
     private void AddToStack()
     {
-        if(playerHight < numOfStacks)
-        {
-            playerMesh.transform.position = new Vector3(playerMesh.transform.position.x, playerMesh.transform.position.y + 0.25f, playerMesh.transform.position.z);
-            Instantiate(block, blockSpawnPoint.position, transform.rotation , blockSpawnPoint.parent);
-            playerHight++;
-        }
+        transform.position = new Vector3(transform.position.x, transform.position.y + raiseBy, transform.position.z);
+        Instantiate(block, blockSpawnPoint.position, transform.rotation , blockSpawnPoint.parent);
     }
 
    

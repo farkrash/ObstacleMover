@@ -7,9 +7,10 @@ public class CameraLerp : MonoBehaviour
     [SerializeField] private Transform cameraPos;
     [SerializeField] private float speed = 15f;
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, cameraPos.position, speed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 
+            Mathf.Lerp(transform.position.z, cameraPos.transform.position.z, Time.deltaTime * speed));
     }
+
 }

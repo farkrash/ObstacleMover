@@ -8,23 +8,14 @@ public class ObstacleScript : MonoBehaviour
     [SerializeField] private float verticalMoveBy = 10f;
     [SerializeField] private float speed = 5f;
     [SerializeField] private bool useThis = false;
-    [SerializeField] private bool moved = false;
     [SerializeField] private bool moveNow = false;
     private Vector3 destination;
     [SerializeField] bool doIMoveVertically = false;
 
-    private void Start()
-    {
-        //destination = new Vector3(transform.position.x + moveBy, transform.position.y, transform.position.z);
-    }
     private void Update()
     {
+        ObstacleDir();
         MoveObstacle();
-       
-        if (moveNow)
-        {
-            transform.position = Vector3.Lerp(transform.position, destination, speed);
-        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -36,7 +27,7 @@ public class ObstacleScript : MonoBehaviour
         useThis = false;
     }
 
-    private void MoveObstacle()
+    private void ObstacleDir()
     {
  
         if (useThis)
@@ -47,11 +38,13 @@ public class ObstacleScript : MonoBehaviour
                 {
                     destination = new Vector3(transform.position.x - moveBy, transform.position.y, transform.position.z);
                     moveNow = true;
+                    
                 }
                 if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
                     destination = new Vector3(transform.position.x + moveBy, transform.position.y, transform.position.z);
                     moveNow = true;
+                    
                 }
             }
             else
@@ -60,13 +53,23 @@ public class ObstacleScript : MonoBehaviour
                 {
                     destination = new Vector3(transform.position.x, transform.position.y - verticalMoveBy, transform.position.z);
                     moveNow = true;
+                    
                 }
                 if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     destination = new Vector3(transform.position.x, transform.position.y + verticalMoveBy, transform.position.z);
                     moveNow = true;
+                    
                 }
             }
+        }
+    }
+
+    private void MoveObstacle()
+    {
+        if (moveNow)
+        {
+            transform.position = Vector3.Lerp(transform.position, destination, speed);
         }
     }
 }
