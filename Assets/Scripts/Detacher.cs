@@ -16,6 +16,11 @@ public class Detacher : MonoBehaviour
         if (other.gameObject.CompareTag("Blocks"))
         {
             other.transform.parent = transform.parent;
+            playerScript.SpawnPointControll();
+        }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            playerScript.stopMoving = true;
         }
     }
 }
