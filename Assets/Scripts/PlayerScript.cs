@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour
     public bool stopMoving = false;
     public int numOfBlocks;
     private int numOfBlocksForUpdate;
-    private bool shouldChangeCamera = false;
+    [SerializeField]private bool shouldChangeCamera = false;
    
     private void Start()
     {
@@ -25,7 +25,25 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
-     
+        if (numOfBlocks >= 10)
+        {
+            if (!shouldChangeCamera)
+            {
+                print("More Than 10");
+                CameraLogic();
+                shouldChangeCamera = true;
+            }
+        }
+        if (numOfBlocks < 10)
+        {
+            if (shouldChangeCamera)
+            {
+                print("Less Than 10");
+                CameraLogic();
+                shouldChangeCamera = false;
+            }
+        }
+
     }
 
     private void PlayerMovment()
@@ -68,28 +86,13 @@ public class PlayerScript : MonoBehaviour
         blockSpawnPoint.transform.position = new Vector3(blockSpawnPoint.transform.position.x,
                 blockSpawnPoint.transform.position.y - 0.5f, blockSpawnPoint.transform.position.z);
         numOfBlocks++;
-        if (numOfBlocks >= 10)
-        {
-            if (!shouldChangeCamera)
-            {
-                CameraLogic();
-                shouldChangeCamera = true;
-            }
-        }
-        if (numOfBlocks < 10)
-        {
-            if (shouldChangeCamera)
-            {
-                CameraLogic();
-                shouldChangeCamera = false;
-            }
-        }
+     
     }
     public void SpawnPointControll()
     {
         blockSpawnPoint.transform.position = new Vector3(blockSpawnPoint.transform.position.x,
                 blockSpawnPoint.transform.position.y + 0.5f, blockSpawnPoint.transform.position.z);
-        numOfBlocks--;
+        //numOfBlocks--;
     }
    
     private void CameraLogic()
