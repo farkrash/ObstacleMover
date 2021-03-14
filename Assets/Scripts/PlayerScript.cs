@@ -12,9 +12,11 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private bool jump = false;
     [SerializeField] private float raiseBy = 1.5f;
     [SerializeField] private GameObject coffinMesh;
+    [SerializeField] private ChangeCamera changeCamera;
     public bool stopMoving = false;
     public int numOfBlocks;
     private int numOfBlocksForUpdate;
+    private bool shouldChangeCamera = false;
    
     private void Start()
     {
@@ -23,6 +25,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
+     
     }
 
     private void PlayerMovment()
@@ -65,13 +68,32 @@ public class PlayerScript : MonoBehaviour
         blockSpawnPoint.transform.position = new Vector3(blockSpawnPoint.transform.position.x,
                 blockSpawnPoint.transform.position.y - 0.5f, blockSpawnPoint.transform.position.z);
         numOfBlocks++;
+        if (numOfBlocks >= 10)
+        {
+            if (!shouldChangeCamera)
+            {
+                CameraLogic();
+                shouldChangeCamera = true;
+            }
+        }
+        if (numOfBlocks < 10)
+        {
+            if (shouldChangeCamera)
+            {
+                CameraLogic();
+                shouldChangeCamera = false;
+            }
+        }
     }
     public void SpawnPointControll()
     {
         blockSpawnPoint.transform.position = new Vector3(blockSpawnPoint.transform.position.x,
                 blockSpawnPoint.transform.position.y + 0.5f, blockSpawnPoint.transform.position.z);
         numOfBlocks--;
-        print("controllBitch");
     }
    
+    private void CameraLogic()
+    {
+        changeCamera.SwitchCamera();
+    }
 }
