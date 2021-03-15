@@ -17,6 +17,7 @@ public class Detacher : MonoBehaviour
         {
             other.transform.parent = transform.parent;
             playerScript.SpawnPointControll();
+            other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
         if (other.gameObject.CompareTag("Player"))
         {

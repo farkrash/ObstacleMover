@@ -17,7 +17,13 @@ public class PlayerScript : MonoBehaviour
     public int numOfBlocks;
     private int numOfBlocksForUpdate;
     [SerializeField]private bool shouldChangeCamera = false;
-   
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private int blocksForCameraChange = 10;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     private void Start()
     {
        blockSpwanPointOgPos = blockSpawnPoint.transform;
@@ -25,7 +31,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
-        if (numOfBlocks >= 10)
+        if (numOfBlocks >= blocksForCameraChange)
         {
             if (!shouldChangeCamera)
             {
@@ -34,7 +40,7 @@ public class PlayerScript : MonoBehaviour
                 shouldChangeCamera = true;
             }
         }
-        if (numOfBlocks < 10)
+        if (numOfBlocks < blocksForCameraChange)
         {
             if (shouldChangeCamera)
             {
@@ -56,6 +62,10 @@ public class PlayerScript : MonoBehaviour
             {
                 transform.Translate(Vector3.up * jumpSpeed * Time.deltaTime);
             }
+        }
+        else
+        {
+            rb.constraints = RigidbodyConstraints.None;
         }
     }
 
