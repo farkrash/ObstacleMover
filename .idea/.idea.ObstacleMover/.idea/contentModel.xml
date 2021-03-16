@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\EdenA\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\EdenA\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_ObstacleMover.1310518434.00" t="ExcludeRecursive" />
+    <e p="C:\Users\EdenA\OneDrive\Documents\Shenkar\Unity\Unity Projects\Obstacle Mover\ObstacleMover" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="MobileDepthWater" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="AnimationStarter.cs" t="Include" />
+            <e p="CameraDepthSlider.cs" t="Include" />
+            <e p="CameraRotator.cs" t="Include" />
+            <e p="FPSCounter.cs" t="Include" />
+            <e p="FPSUI.cs" t="Include" />
+            <e p="TouchRotator.cs" t="Include" />
+            <e p="Water" t="Include">
+              <e p="WaterArea.cs" t="Include" />
+              <e p="WaterMaterialSwitcher.cs" t="Include" />
+              <e p="WaterPropertyBlockSetter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="WaterOpaque" t="Include">
+              <e p="Depth" t="Include">
+                <e p="DiffuseColorDepthWater.shader" t="Include" />
+                <e p="DiffuseDepthWater.shader" t="Include" />
+              </e>
+              <e p="DiffuseWaterOpaque.shader" t="Include" />
+              <e p="Height" t="Include">
+                <e p="DiffuseColorHeightWater.shader" t="Include" />
+                <e p="DiffuseHeightWater.shader" t="Include" />
+              </e>
+            </e>
+            <e p="WaterTwoSide" t="Include">
+              <e p="Depth" t="Include">
+                <e p="DiffuseColorDepthWaterTwoSide.shader" t="Include" />
+                <e p="DiffuseDepthWaterTwoSide.shader" t="Include" />
+              </e>
+              <e p="Height" t="Include">
+                <e p="DiffuseColorHeightWaterTwoSide.shader" t="Include" />
+                <e p="DiffuseHeightWaterTwoSide.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="BlockLogic.cs" t="Include" />
+          <e p="BoatAnimations.cs" t="Include" />
+          <e p="CameraLerp.cs" t="Include" />
+          <e p="ChangeCamera.cs" t="Include" />
+          <e p="CoffinBlockDecreasCount.cs" t="Include" />
+          <e p="Detacher.cs" t="Include" />
+          <e p="FollowForCamera.cs" t="Include" />
+          <e p="ObstacleScript.cs" t="Include" />
+          <e p="OnPlayerScript.cs" t="Include" />
+          <e p="PlayerScript.cs" t="Include" />
+          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="SpringLogic.cs" t="Include" />
+        </e>
+        <e p="SimpleSky" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="ObstacleMover.sln" t="IncludeFlat" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
