@@ -25,12 +25,12 @@ public class CameraLerp : MonoBehaviour
     {
         
 
-        if (player.numOfBlocks >= 10)
+        if (player.numOfStacks >= 10)
         {
             transform.position = new Vector3(transform.position.x, cameraPos2OG.position.y,
               Mathf.Lerp(transform.position.z, cameraPos2.transform.position.z, Time.deltaTime * speed));
         }
-        if(player.numOfBlocks < 10)
+        if(player.numOfStacks < 10)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y,
               Mathf.Lerp(transform.position.z, cameraPos.transform.position.z, Time.deltaTime * speed));
@@ -39,12 +39,12 @@ public class CameraLerp : MonoBehaviour
 
     private void Transition()
     {
-        if (player.numOfBlocks >= 10)
+        if (player.numOfStacks >= 10)
         {
             transitionToPos1 = false;
             transitionToPos2 = true;
         }
-        if (player.numOfBlocks < 10)
+        if (player.numOfStacks < 10)
         {
             transitionToPos1 = true;
             transitionToPos2 = false;

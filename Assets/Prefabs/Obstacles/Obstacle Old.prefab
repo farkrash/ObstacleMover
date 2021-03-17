@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 7979801967673710578}
   - component: {fileID: 7979801967673710583}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: Obstacle Old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveBy: 2
+  verticalMoveBy: 10
   speed: 0.2
   useThis: 0
-  moved: 0
   moveNow: 0
+  doIMoveVertically: 0

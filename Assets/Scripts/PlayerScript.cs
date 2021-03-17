@@ -4,34 +4,39 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    [SerializeField] private float speed = 15f;
-    [SerializeField] private float jumpSpeed = 15f;
-    [SerializeField] private GameObject block;
-    [SerializeField] private GameObject blockSpawnPoint;
-    [SerializeField] private Transform blockSpwanPointOgPos;
+    [Header("Player Config")]
+    [SerializeField] private float moveSpeed = 15f;
+    private Rigidbody rb;
+    
+    [Header("Jump Config")]
     [SerializeField] private bool jump = false;
+    [SerializeField] private float jumpSpeed = 15f;
+    
+    [Header("Stacks Config")]
+    [SerializeField] private GameObject stack;
+    [SerializeField] private GameObject stackMesh;
+    [SerializeField] private GameObject stackSpawnPoint;
     [SerializeField] private float raiseBy = 1.5f;
-    [SerializeField] private GameObject coffinMesh;
+    public int numOfStacks;
+    private int numOfStacksForUpdate;
+    
+    [Header("Camera Config")]
+    [SerializeField] private int stacksForCameraChange = 10;
     [SerializeField] private ChangeCamera changeCamera;
+    private bool shouldChangeCamera = false;
     public bool stopMoving = false;
-    public int numOfBlocks;
-    private int numOfBlocksForUpdate;
-    [SerializeField]private bool shouldChangeCamera = false;
-    [SerializeField] private Rigidbody rb;
-    [SerializeField] private int blocksForCameraChange = 10;
+    
+    
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
-    private void Start()
-    {
-       blockSpwanPointOgPos = blockSpawnPoint.transform;
-    }
     void Update()
     {
         PlayerMovment();
-        if (numOfBlocks >= blocksForCameraChange)
+        if (numOfStacks >= stacksForCameraChange)
         {
             if (!shouldChangeCamera)
             {
@@ -40,7 +45,7 @@ public class PlayerScript : MonoBehaviour
                 shouldChangeCamera = true;
             }
         }
-        if (numOfBlocks < blocksForCameraChange)
+        if (numOfStacks < stacksForCameraChange)
         {
             if (shouldChangeCamera)
             {
@@ -56,11 +61,11 @@ public class PlayerScript : MonoBehaviour
     {
         if (!stopMoving)
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
 
             if (jump)
             {
-                transform.Translate(Vector3.up * jumpSpeed * Time.deltaTime);
+                transform.Translate(Vector3.up * (jumpSpeed * Time.deltaTime));
             }
         }
         else
@@ -92,17 +97,17 @@ public class PlayerScript : MonoBehaviour
     private void AddToStack()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y + raiseBy, transform.position.z);
-        Instantiate(block, blockSpawnPoint.transform.position, coffinMesh.transform.rotation, blockSpawnPoint.transform.parent);
-        blockSpawnPoint.transform.position = new Vector3(blockSpawnPoint.transform.position.x,
-                blockSpawnPoint.transform.position.y - 0.5f, blockSpawnPoint.transform.position.z);
-        numOfBlocks++;
+        Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, stackSpawnPoint.transform.parent);
+        stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
+                stackSpawnPoint.transform.position.y - 0.5f, stackSpawnPoint.transform.position.z);
+        numOfStacks++;
      
     }
     public void SpawnPointControll()
     {
-        blockSpawnPoint.transform.position = new Vector3(blockSpawnPoint.transform.position.x,
-                blockSpawnPoint.transform.position.y + 0.5f, blockSpawnPoint.transform.position.z);
-        //numOfBlocks--;
+        stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
+                stackSpawnPoint.transform.position.y + 0.5f, stackSpawnPoint.transform.position.z);
+        
     }
    
     private void CameraLogic()

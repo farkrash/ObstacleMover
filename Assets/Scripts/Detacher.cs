@@ -5,7 +5,6 @@ using UnityEngine;
 public class Detacher : MonoBehaviour
 {
     private PlayerScript playerScript;
-    public int obstacleHight;
 
     private void Awake()
     {

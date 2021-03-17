@@ -4,29 +4,27 @@ using UnityEngine;
 
 public class ObstacleScript : MonoBehaviour
 {
-    [SerializeField] private float moveBy = 10f;
-    [SerializeField] private float verticalMoveBy = 10f;
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private bool useThis = false;
-    [SerializeField] private bool moveNow = false;
-    private Vector3 destination;
+    [Header("Horizontal Config")]
+    [SerializeField] private float horizontalMoveBy = 2f;
+    
+    [Header("Vertical Config")]
+    [SerializeField] private float verticalMoveBy = 1f;
     [SerializeField] bool doIMoveVertically = false;
+    
+    [Header("Speed")]
+    [SerializeField] private float speed = 0.2f;
+    
+    public bool useThis = false;
+    private bool moveNow = false;
+    private Vector3 destination;
+    
 
     private void Update()
     {
         ObstacleDir();
         MoveObstacle();
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        useThis = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        useThis = false;
-    }
-
+    
     private void ObstacleDir()
     {
  
@@ -36,13 +34,13 @@ public class ObstacleScript : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
-                    destination = new Vector3(transform.position.x - moveBy, transform.position.y, transform.position.z);
+                    destination = new Vector3(transform.position.x - horizontalMoveBy, transform.position.y, transform.position.z);
                     moveNow = true;
                     
                 }
                 if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
-                    destination = new Vector3(transform.position.x + moveBy, transform.position.y, transform.position.z);
+                    destination = new Vector3(transform.position.x + horizontalMoveBy, transform.position.y, transform.position.z);
                     moveNow = true;
                     
                 }

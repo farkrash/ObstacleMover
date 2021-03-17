@@ -53,6 +53,7 @@
           <e p="CoffinBlockDecreasCount.cs" t="Include" />
           <e p="Detacher.cs" t="Include" />
           <e p="FollowForCamera.cs" t="Include" />
+          <e p="MoveTrigger.cs" t="Include" />
           <e p="ObstacleScript.cs" t="Include" />
           <e p="OnPlayerScript.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />

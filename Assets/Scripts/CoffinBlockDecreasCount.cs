@@ -14,8 +14,8 @@ public class CoffinBlockDecreasCount : MonoBehaviour
     {
         if (other.GetComponent<Detacher>())
         {
-            player.numOfBlocks--;
-            print(player.numOfBlocks);
+            player.numOfStacks--;
+            print(player.numOfStacks);
         }
     }
 
