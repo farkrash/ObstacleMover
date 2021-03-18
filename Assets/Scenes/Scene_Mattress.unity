@@ -311,12 +311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 3
+  doIMoveVertically: 1
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 1
 --- !u!65 &76090445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -451,7 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &77816218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -515,7 +513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &131539327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -725,12 +722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &233318616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -854,7 +850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &250524050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -918,7 +913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &261328911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -976,7 +970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &279588250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1116,12 +1109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &358087264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1203,7 +1195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358087262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.32, y: 3.81, z: -132.21}
+  m_LocalPosition: {x: -4.37, y: 3.81, z: -132.21}
   m_LocalScale: {x: 1.786176, y: 1, z: 3.6535}
   m_Children:
   - {fileID: 7442531781303011010}
@@ -1267,12 +1259,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &413786281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1431,12 +1422,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &475675879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1722,7 +1712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &527044450
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1860,7 +1849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!1 &602818002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &602818004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2091,12 +2078,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &638039603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2282,7 +2268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &685572481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2537,7 +2522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &760727659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2599,12 +2583,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &766932114
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2953,7 +2936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &919772011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3143,7 +3125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933904657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.13, y: 4.83, z: -74.2}
+  m_LocalPosition: {x: -2.51, y: 4.83, z: -74.2}
   m_LocalScale: {x: 1.786176, y: 1, z: 3.6535}
   m_Children:
   - {fileID: 5426460950988794001}
@@ -3164,12 +3146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!4 &978444728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
@@ -3257,7 +3238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1019559498
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3510,7 +3490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1094020968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3743,7 +3722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!1 &1206497661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,7 +3755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1206497663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4012,12 +3989,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &1286500085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4158,7 +4134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1303043958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4722,12 +4697,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &1482811247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4914,7 +4888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1516776725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4972,7 +4945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1529465430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5019,12 +4991,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &1542011075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5106,7 +5077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542011073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.32, y: 3.81, z: -99.91}
+  m_LocalPosition: {x: -2.51, y: 3.81, z: -99.91}
   m_LocalScale: {x: 1.786176, y: 1, z: 3.6535}
   m_Children:
   - {fileID: 770758336}
@@ -5120,7 +5091,6 @@ Transform:
   - {fileID: 34506094}
   - {fileID: 87212130}
   - {fileID: 978444728}
-  - {fileID: 1596625008}
   m_Father: {fileID: 1592318955}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5172,12 +5142,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 1
+  doIMoveVertically: 1
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 1
 --- !u!65 &1552955287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5411,7 +5380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1566179200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5716,12 +5684,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: eab4615f2dbe7164187ad0f9efb718fa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ea0bd6b671b46143bfa85b07098cd3c, type: 3}
---- !u!4 &1596625008 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-    type: 3}
-  m_PrefabInstance: {fileID: 1812378802}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1617213659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ea0bd6b671b46143bfa85b07098cd3c,
@@ -5801,12 +5763,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &1651904861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6365,7 +6326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1770551967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6379,85 +6339,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.58, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1812378802
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1542011079}
-    m_Modifications:
-    - target: {fileID: 2615948465680515802, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_Name
-      value: Mattress (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.50008154
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.13760476
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.16373341
-      objectReference: {fileID: 0}
-    - target: {fileID: 3388510022704945248, guid: 00f448bd0d826064da7cc03c034cb117,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33490542
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 00f448bd0d826064da7cc03c034cb117, type: 3}
 --- !u!1 &1828509619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6502,7 +6383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1828509622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6570,12 +6450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &1845825329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6831,7 +6710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1883266465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7042,7 +6920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1896622926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7154,12 +7031,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &1950587509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7312,12 +7188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 1
+  doIMoveVertically: 1
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 1
 --- !u!65 &1951892769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7529,7 +7404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &1970641030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7711,7 +7585,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!65 &2049169024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7773,12 +7646,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!65 &2055732330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8632,7 +8504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!4 &5426460950779869143
 Transform:
   m_ObjectHideFlags: 0
@@ -8659,12 +8530,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!4 &5426460950988794001
 Transform:
   m_ObjectHideFlags: 0
@@ -8903,12 +8773,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1390a9e386137a4cb7a7f087a338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveBy: 2
+  horizontalMoveBy: 2
   verticalMoveBy: 10
+  doIMoveVertically: 0
   speed: 0.2
   useThis: 0
-  moveNow: 0
-  doIMoveVertically: 0
 --- !u!4 &6946883485142426624
 Transform:
   m_ObjectHideFlags: 0
@@ -8935,7 +8804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f637edf1bf88b484e8f222c7876e2050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleHight: 0
 --- !u!1 &6946883485142426654
 GameObject:
   m_ObjectHideFlags: 0
@@ -9187,20 +9055,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e7cb47e4cdaa348a500edee904a3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  jumpSpeed: 10
-  block: {fileID: 1019185624973105980, guid: 78d0e004aaae70b4d92d5cf5b45db83d, type: 3}
-  blockSpawnPoint: {fileID: 8982862445590077587}
-  blockSpwanPointOgPos: {fileID: 0}
+  moveSpeed: 15
   jump: 0
+  jumpForce: 15
+  stack: {fileID: 0}
+  stackMesh: {fileID: 0}
+  stackSpawnPoint: {fileID: 0}
   raiseBy: 1
-  coffinMesh: {fileID: 4779990574688678316}
+  numOfStacks: 0
+  stacksForCameraChange: 10
   changeCamera: {fileID: 1336240795}
   stopMoving: 0
-  numOfBlocks: 0
-  shouldChangeCamera: 0
-  rb: {fileID: 0}
-  blocksForCameraChange: 5
 --- !u!1 &8982862446717108594
 GameObject:
   m_ObjectHideFlags: 0
