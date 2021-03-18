@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
-    [SerializeField] private float jumpSpeed = 15f;
+    [SerializeField] private float jumpForce = 15f;
     
     [Header("Stacks Config")]
     [SerializeField] private GameObject stack;
@@ -65,7 +65,7 @@ public class PlayerScript : MonoBehaviour
 
             if (jump)
             {
-                transform.Translate(Vector3.up * (jumpSpeed * Time.deltaTime));
+                transform.Translate(Vector3.up * (jumpForce * Time.deltaTime));
             }
         }
         else
