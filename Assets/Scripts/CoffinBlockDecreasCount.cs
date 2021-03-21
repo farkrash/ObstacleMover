@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoffinBlockDecreasCount : MonoBehaviour
 {
     [SerializeField] private PlayerCoffinScript player;
-
+    private bool numOfstacksDecreased = false;
     private void Awake()
     {
         player = FindObjectOfType<PlayerCoffinScript>();
@@ -14,8 +14,12 @@ public class CoffinBlockDecreasCount : MonoBehaviour
     {
         if (other.GetComponent<Detacher>())
         {
-            player.numOfStacks--;
-            print(player.numOfStacks);
+            if (!numOfstacksDecreased)
+            {
+                player.numOfStacks--;
+                print(player.numOfStacks);
+                numOfstacksDecreased = true;
+            }
         }
     }
 

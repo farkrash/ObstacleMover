@@ -27,6 +27,7 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private GameObject stackSpawnPoint;
     [SerializeField] private float raiseBy = 1.5f;
     [SerializeField] private float bobTime = 1f;
+    [SerializeField] private GameObject coffinHolder;
     private float timeFromLastBob = 0f;
     public int numOfStacks;
     private int numOfStacksForUpdate;
@@ -38,6 +39,7 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private ChangeCamera changeCamera;
     private bool shouldChangeCamera = false;
     public bool stopMoving = false;
+    
 
 
 
@@ -99,7 +101,7 @@ public class PlayerCoffinScript : MonoBehaviour
             }
             if (lunch)
             {
-                playerCoffin.transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
+                coffinHolder.transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
             }
         }
     }
@@ -133,7 +135,7 @@ public class PlayerCoffinScript : MonoBehaviour
     private void AddToStack()
     {
        //playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
-        Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, stackSpawnPoint.transform.parent);
+        Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, playerCoffin.transform.parent);
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
                 stackSpawnPoint.transform.position.y +1f, stackSpawnPoint.transform.position.z);
         numOfStacks++;
