@@ -8,6 +8,7 @@ TagManager:
   - Blocks
   - Spring
   - Player Holder
+  - EndStopper
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,15 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private float moveSpeed = 15f;
     private Rigidbody rb;
     [SerializeField] private GameObject playerCoffin;
+    [SerializeField] private Animator animator;
+    [SerializeField] private Animator animator2;
+    [SerializeField] private Animator animator3;
+    [SerializeField] private Animator animator4;
+    private bool atEnd = false;
+    private bool lunch = false;
+    
 
+    
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
@@ -79,6 +87,21 @@ public class PlayerCoffinScript : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints.None;
         }
+        if (atEnd)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                lunch = true;
+                animator.SetBool("Throw", true);
+                animator2.SetBool("Throw", true);
+                animator3.SetBool("Throw", true);
+                animator4.SetBool("Throw", true);
+            }
+            if (lunch)
+            {
+                playerCoffin.transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -95,6 +118,11 @@ public class PlayerCoffinScript : MonoBehaviour
             jump = true;
             Invoke("JumpToFalse", 1f);
         }
+
+        if (other.gameObject.CompareTag("EndStopper"))
+        {
+            atEnd = true;
+        }
     }
 
     private void JumpToFalse()
@@ -104,7 +132,7 @@ public class PlayerCoffinScript : MonoBehaviour
 
     private void AddToStack()
     {
-       // playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
+       //playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
         Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, stackSpawnPoint.transform.parent);
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
                 stackSpawnPoint.transform.position.y +1f, stackSpawnPoint.transform.position.z);
