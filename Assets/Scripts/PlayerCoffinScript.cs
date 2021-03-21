@@ -18,8 +18,12 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private GameObject stackMesh;
     [SerializeField] private GameObject stackSpawnPoint;
     [SerializeField] private float raiseBy = 1.5f;
+    [SerializeField] private float bobTime = 1f;
+    private float timeFromLastBob = 0f;
     public int numOfStacks;
     private int numOfStacksForUpdate;
+    public bool timeToBob = false;
+    private BobbingEffect bobbingEffect;
 
     [Header("Camera Config")]
     [SerializeField] private int stacksForCameraChange = 10;
@@ -33,10 +37,12 @@ public class PlayerCoffinScript : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        bobbingEffect = GetComponentInChildren<BobbingEffect>();
     }
     void Update()
     {
         PlayerMovment();
+        BobLogic();
         if (numOfStacks >= stacksForCameraChange)
         {
             if (!shouldChangeCamera)
@@ -79,6 +85,7 @@ public class PlayerCoffinScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Stackable"))
         {
+            
             AddToStack();
             Destroy(other.gameObject);
         }
@@ -97,13 +104,12 @@ public class PlayerCoffinScript : MonoBehaviour
 
     private void AddToStack()
     {
-        print("bitch");
-        playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
+       // playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
         Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, stackSpawnPoint.transform.parent);
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
-                stackSpawnPoint.transform.position.y - 0.5f, stackSpawnPoint.transform.position.z);
+                stackSpawnPoint.transform.position.y +1f, stackSpawnPoint.transform.position.z);
         numOfStacks++;
-
+        bobbingEffect.forceNeeded = true;
     }
     public void SpawnPointControll()
     {
@@ -115,5 +121,16 @@ public class PlayerCoffinScript : MonoBehaviour
     private void CameraLogic()
     {
         changeCamera.SwitchCamera();
+    }
+
+    private void BobLogic()
+    {
+        timeFromLastBob += Time.deltaTime;
+
+        if(timeFromLastBob >= bobTime)
+        {
+            timeToBob = true;
+            timeFromLastBob = 0f;
+        }
     }
 }

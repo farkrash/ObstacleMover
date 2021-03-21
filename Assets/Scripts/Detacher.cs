@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Detacher : MonoBehaviour
 {
-    private PlayerScript playerScript;
 
+    private PlayerCoffinScript playerScript;
     private void Awake()
     {
-        playerScript = FindObjectOfType<PlayerScript>();
+        playerScript = FindObjectOfType<PlayerCoffinScript>();
     }
     private void OnTriggerEnter(Collider other)
     {

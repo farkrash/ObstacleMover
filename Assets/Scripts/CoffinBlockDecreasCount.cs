@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CoffinBlockDecreasCount : MonoBehaviour
 {
-    [SerializeField] private PlayerScript player;
+    [SerializeField] private PlayerCoffinScript player;
 
     private void Awake()
     {
-        player = FindObjectOfType<PlayerScript>();
+        player = FindObjectOfType<PlayerCoffinScript>();
     }
     private void OnTriggerEnter(Collider other)
     {
