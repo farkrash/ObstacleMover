@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private GameObject stackMesh;
     [SerializeField] private GameObject stackSpawnPoint;
     [SerializeField] private float raiseBy = 1.5f;
+    [SerializeField] private float spawnPointRaiseBy;
     public int numOfStacks;
     private int numOfStacksForUpdate;
     
@@ -99,14 +100,14 @@ public class PlayerScript : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y + raiseBy, transform.position.z);
         Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, stackSpawnPoint.transform.parent);
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
-                stackSpawnPoint.transform.position.y - 0.5f, stackSpawnPoint.transform.position.z);
+                stackSpawnPoint.transform.position.y - spawnPointRaiseBy, stackSpawnPoint.transform.position.z);
         numOfStacks++;
      
     }
     public void SpawnPointControll()
     {
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
-                stackSpawnPoint.transform.position.y + 0.5f, stackSpawnPoint.transform.position.z);
+                stackSpawnPoint.transform.position.y + spawnPointRaiseBy, stackSpawnPoint.transform.position.z);
         
     }
    

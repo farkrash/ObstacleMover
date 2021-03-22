@@ -43,8 +43,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0859878, y: 0.36722547, z: 0.57075906}
-  m_Center: {x: 0, y: 0.4, z: -1.8653795}
+  m_Size: {x: 2.0859878, y: 0.13, z: 0.57075906}
+  m_Center: {x: 0, y: 0.34, z: -1.8653795}
 --- !u!114 &3306931906532733743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 6670508860406257321}
   - component: {fileID: 1286431387441461790}
   m_Layer: 0
-  m_Name: Obstacle Parent_Horizontal 1
+  m_Name: Horizontal_Obstacle Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
