@@ -48,14 +48,20 @@
         <e p="Scripts" t="Include">
           <e p="BlockLogic.cs" t="Include" />
           <e p="BoatAnimations.cs" t="Include" />
+          <e p="BobbingEffect.cs" t="Include" />
           <e p="CameraLerp.cs" t="Include" />
           <e p="ChangeCamera.cs" t="Include" />
           <e p="CoffinBlockDecreasCount.cs" t="Include" />
+          <e p="DecreaseBlockCount.cs" t="Include" />
           <e p="Detacher.cs" t="Include" />
+          <e p="DetacherBeach.cs" t="Include" />
           <e p="FollowForCamera.cs" t="Include" />
+          <e p="FollowForCameraBeach.cs" t="Include" />
+          <e p="HCAnimatorSpeed.cs" t="Include" />
           <e p="MoveTrigger.cs" t="Include" />
           <e p="ObstacleScript.cs" t="Include" />
           <e p="OnPlayerScript.cs" t="Include" />
+          <e p="PlayerCoffinScript.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="SpringLogic.cs" t="Include" />
