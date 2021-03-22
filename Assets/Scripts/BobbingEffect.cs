@@ -5,7 +5,7 @@ using UnityEngine;
 public class BobbingEffect : MonoBehaviour
 {
     private PlayerCoffinScript playerScript;
-    [SerializeField] private float jumpForce = 1f;
+    public float jumpForce = 100f;
     private Rigidbody rb;
     
     private void Awake()

@@ -128,6 +128,7 @@ public class PlayerCoffinScript : MonoBehaviour
         {
             atEnd = true;
             SwitchDance();
+            bobbingEffect.jumpForce = 0f;
         }
     }
 
