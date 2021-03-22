@@ -14,9 +14,9 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private Animator animator4;
     private bool atEnd = false;
     private bool lunch = false;
-    
 
-    
+
+
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
@@ -39,7 +39,7 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private ChangeCamera changeCamera;
     private bool shouldChangeCamera = false;
     public bool stopMoving = false;
-    
+
 
 
 
@@ -52,7 +52,10 @@ public class PlayerCoffinScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
-        BobLogic();
+        if (!lunch)
+        {
+            BobLogic();
+        }
         if (numOfStacks >= stacksForCameraChange)
         {
             if (!shouldChangeCamera)
@@ -101,7 +104,7 @@ public class PlayerCoffinScript : MonoBehaviour
             }
             if (lunch)
             {
-                coffinHolder.transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
+                Invoke("ThrowCoffin", 0.5f);
             }
         }
     }
@@ -110,7 +113,7 @@ public class PlayerCoffinScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Stackable"))
         {
-            
+
             AddToStack();
             Destroy(other.gameObject);
         }
@@ -124,6 +127,7 @@ public class PlayerCoffinScript : MonoBehaviour
         if (other.gameObject.CompareTag("EndStopper"))
         {
             atEnd = true;
+            SwitchDance();
         }
     }
 
@@ -134,17 +138,17 @@ public class PlayerCoffinScript : MonoBehaviour
 
     private void AddToStack()
     {
-       //playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
+        //playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
         Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, playerCoffin.transform.parent);
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
-                stackSpawnPoint.transform.position.y +1f, stackSpawnPoint.transform.position.z);
+                stackSpawnPoint.transform.position.y + 1f, stackSpawnPoint.transform.position.z);
         numOfStacks++;
-        bobbingEffect.forceNeeded = true;
+        SwitchDance();
     }
     public void SpawnPointControll()
     {
-       stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
-                stackSpawnPoint.transform.position.y + 0.5f, stackSpawnPoint.transform.position.z);
+        stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
+                 stackSpawnPoint.transform.position.y - 0.5f, stackSpawnPoint.transform.position.z);
 
     }
 
@@ -157,10 +161,32 @@ public class PlayerCoffinScript : MonoBehaviour
     {
         timeFromLastBob += Time.deltaTime;
 
-        if(timeFromLastBob >= bobTime)
+        if (timeFromLastBob >= bobTime)
         {
             timeToBob = true;
             timeFromLastBob = 0f;
         }
+    }
+
+    private void SwitchDanceToFlase()
+    {
+        animator.SetBool("SwitchDance", false);
+        animator2.SetBool("SwitchDance", false);
+        animator3.SetBool("SwitchDance", false);
+        animator4.SetBool("SwitchDance", false);
+    }
+
+    private void ThrowCoffin()
+    {
+        coffinHolder.transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
+    }
+
+    private void SwitchDance()
+    {
+        animator.SetBool("SwitchDance", true);
+        animator2.SetBool("SwitchDance", true);
+        animator3.SetBool("SwitchDance", true);
+        animator4.SetBool("SwitchDance", true);
+        Invoke("SwitchDanceToFlase", 1f);
     }
 }
