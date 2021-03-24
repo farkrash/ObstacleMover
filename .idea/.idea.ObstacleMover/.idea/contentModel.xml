@@ -56,6 +56,7 @@
           <e p="DecreaseBlockCount.cs" t="Include" />
           <e p="Detacher.cs" t="Include" />
           <e p="DetacherBeach.cs" t="Include" />
+          <e p="Fader.cs" t="Include" />
           <e p="FollowForCamera.cs" t="Include" />
           <e p="FollowForCameraBeach.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
@@ -147,6 +148,15 @@
               <e p="ReadmeEditor.cs" t="Include" />
             </e>
             <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+        <e p="XrayDemo" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Pomo.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="xpointMoment.cs" t="Include" />
+            <e p="XrayPoint.cs" t="Include" />
           </e>
         </e>
       </e>

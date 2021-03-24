@@ -1,30 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Fader : MonoBehaviour
 {
-    private GameObject otherGameObject;
-    private void Update()
+    [SerializeField] private Material lowAlphaMat;
+    [SerializeField] private float alphaReduceSpeed = 2f;
+    
+    private void OnTriggerStay(Collider other)
     {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        print("bitchhhhh");
-        if (other.GetComponent<MeshRenderer>())
+        if (other.gameObject.tag != "Player" && other.gameObject.GetComponent<Renderer>() != null)
         {
-            otherGameObject = other.gameObject;
             
-            //other.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
-            //var oldColor = other.GetComponent<Renderer>().material.color;
-            var oldColor = new UnityEngine.Color(0, 0, 0, 0);
-            other.GetComponent<Renderer>().material.color = oldColor;
+            var renderer = other.GetComponent<Renderer>();
+            Material[] materials = renderer.materials;
+            foreach (var material in materials)
+            {
+                Color color = material.color;
+                color.a -= alphaReduceSpeed * Time.deltaTime;
+                material.color = color;
+            }
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("bitchhhhh2");
-    }
+    
 }
