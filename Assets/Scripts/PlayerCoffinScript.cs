@@ -132,12 +132,6 @@ public class PlayerCoffinScript : MonoBehaviour
             SwitchDance();
             bobbingEffect.jumpForce = 0f;
         }
-
-        if (other.gameObject.CompareTag("Collectable"))
-        {
-            gameManager.AddToScore();
-            Destroy(other.gameObject);
-        }
     }
 
     private void JumpToFalse()
@@ -150,7 +144,7 @@ public class PlayerCoffinScript : MonoBehaviour
         //playerCoffin.transform.position = new Vector3(playerCoffin.transform.position.x, playerCoffin.transform.position.y + raiseBy, playerCoffin.transform.position.z);
         Instantiate(stack, stackSpawnPoint.transform.position, stackMesh.transform.rotation, playerCoffin.transform.parent);
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
-                stackSpawnPoint.transform.position.y + 1f, stackSpawnPoint.transform.position.z);
+                stackSpawnPoint.transform.position.y + 0.5f, stackSpawnPoint.transform.position.z);
         numOfStacks++;
         SwitchDance();
     }
