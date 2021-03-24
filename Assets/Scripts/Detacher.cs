@@ -17,7 +17,10 @@ public class Detacher : MonoBehaviour
     }
     private void Start()
     {
-        destination = new Vector3(groundCover.transform.position.x - moveBy, groundCover.transform.position.y, groundCover.transform.position.z);
+        if (groundCover != null)
+        { 
+            destination = new Vector3(groundCover.transform.position.x - moveBy, groundCover.transform.position.y, groundCover.transform.position.z);
+        }
     }
     private void Update()
     {

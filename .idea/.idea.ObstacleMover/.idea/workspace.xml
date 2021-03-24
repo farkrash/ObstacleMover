@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player_Stacks_Mattress.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player_Stacks_Mattress.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Stacks/Collectable_Stacks_Mattress.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Stacks/Collectable_Stacks_Mattress.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/HC Character/Male_rig.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/HC Character/Male_rig.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Coffin.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Coffin.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Detacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Detacher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +25,12 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/MoveTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ObstacleScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Detacher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FollowForCameraBeach.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DecreaseBlockCount.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DetacherBeach.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Detacher.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pqF4SNfSWoCGLwFoiFRegiRMun" />
@@ -82,6 +84,8 @@
       <workItem from="1616404846718" duration="1143000" />
       <workItem from="1616419064371" duration="2000" />
       <workItem from="1616421091161" duration="626000" />
+      <workItem from="1616572283691" duration="1262000" />
+      <workItem from="1616574062025" duration="808000" />
     </task>
     <servers />
   </component>

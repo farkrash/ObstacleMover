@@ -52,6 +52,7 @@ public class PlayerCoffinScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
+        StopMovingWhenFall();
         if (!lunch)
         {
             BobLogic();
@@ -189,5 +190,13 @@ public class PlayerCoffinScript : MonoBehaviour
         animator3.SetBool("SwitchDance", true);
         animator4.SetBool("SwitchDance", true);
         Invoke("SwitchDanceToFlase", 1f);
+    }
+
+    private void StopMovingWhenFall()
+    {
+        if (transform.position.y <= 1f)
+        {
+            stopMoving = true;
+        }
     }
 }
