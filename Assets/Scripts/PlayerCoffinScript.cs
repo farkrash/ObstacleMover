@@ -53,7 +53,7 @@ public class PlayerCoffinScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
-        StopMovingWhenFall();
+       // StopMovingWhenFall();
         if (!lunch)
         {
             BobLogic();
