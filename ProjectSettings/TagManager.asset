@@ -9,6 +9,7 @@ TagManager:
   - Spring
   - Player Holder
   - EndStopper
+  - Collectable
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ public class PlayerCoffinScript : MonoBehaviour
     [SerializeField] private Animator animator4;
     private bool atEnd = false;
     private bool lunch = false;
-
+    private GameManager gameManager;
 
 
     [Header("Jump Config")]
@@ -48,6 +48,7 @@ public class PlayerCoffinScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         bobbingEffect = GetComponentInChildren<BobbingEffect>();
+        gameManager = FindObjectOfType<GameManager>();
     }
     void Update()
     {
@@ -130,6 +131,12 @@ public class PlayerCoffinScript : MonoBehaviour
             atEnd = true;
             SwitchDance();
             bobbingEffect.jumpForce = 0f;
+        }
+
+        if (other.gameObject.CompareTag("Collectable"))
+        {
+            gameManager.AddToScore();
+            Destroy(other.gameObject);
         }
     }
 
