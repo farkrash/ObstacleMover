@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Coffin New Pallete.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Coffin New Pallete.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Detacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Detacher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +91,7 @@
       <workItem from="1616574062025" duration="2929000" />
       <workItem from="1616583119244" duration="1053000" />
       <workItem from="1616586555780" duration="7126000" />
-      <workItem from="1616657545652" duration="2300000" />
+      <workItem from="1616657545652" duration="2336000" />
     </task>
     <servers />
   </component>
