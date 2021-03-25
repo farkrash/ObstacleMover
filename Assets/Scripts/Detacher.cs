@@ -11,6 +11,7 @@ public class Detacher : MonoBehaviour
     private float moveBy = 3.2f;
     private Vector3 destination;
     private bool shouldMoveCover = false;
+    private bool detachedOnce = false;
     private void Awake()
     {
         playerScript = FindObjectOfType<PlayerCoffinScript>();
@@ -31,9 +32,13 @@ public class Detacher : MonoBehaviour
         if (other.gameObject.CompareTag("Blocks"))
         {
             other.transform.parent = transform.parent;
-            playerScript.SpawnPointControll();
+            if (!detachedOnce)
+            {
+                playerScript.SpawnPointControll();
+            }
             other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             shouldMoveCover = true;
+            detachedOnce = true;
         }
         if (other.gameObject.CompareTag("Player"))
         {
