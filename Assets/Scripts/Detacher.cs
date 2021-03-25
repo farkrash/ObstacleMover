@@ -7,8 +7,8 @@ public class Detacher : MonoBehaviour
 
     private PlayerCoffinScript playerScript;
     [SerializeField] private GameObject groundCover;
-     private float groundSpeed = 0.1f;
-     private float moveBy = 2.2f;
+    private float groundSpeed = 0.01f;
+    private float moveBy = 3.2f;
     private Vector3 destination;
     private bool shouldMoveCover = false;
     private void Awake()

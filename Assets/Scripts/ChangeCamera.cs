@@ -36,4 +36,11 @@ public class ChangeCamera : MonoBehaviour
             cameraList[currentCamera].gameObject.SetActive(true);
         }
     }
+
+    public void ChooseFarCamera()
+    {
+        cameraList[0].gameObject.SetActive(false);
+        cameraList[1].gameObject.SetActive(true);
+        
+    }
 }

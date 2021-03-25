@@ -53,29 +53,13 @@ public class PlayerCoffinScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
-       // StopMovingWhenFall();
+        CameraLogic();
+        //StopMovingWhenFall();
         if (!lunch)
         {
             BobLogic();
         }
-        if (numOfStacks >= stacksForCameraChange)
-        {
-            if (!shouldChangeCamera)
-            {
-                print("More Than 10");
-                CameraLogic();
-                shouldChangeCamera = true;
-            }
-        }
-        if (numOfStacks < stacksForCameraChange)
-        {
-            if (shouldChangeCamera)
-            {
-                print("Less Than 10");
-                CameraLogic();
-                shouldChangeCamera = false;
-            }
-        }
+        
 
     }
 
@@ -157,7 +141,32 @@ public class PlayerCoffinScript : MonoBehaviour
 
     private void CameraLogic()
     {
-        changeCamera.SwitchCamera();
+        if (!atEnd)
+        {
+            if (numOfStacks >= stacksForCameraChange)
+            {
+                if (!shouldChangeCamera)
+                {
+                    print("More Than 10");
+                    changeCamera.SwitchCamera();
+                    shouldChangeCamera = true;
+                }
+            }
+            if (numOfStacks < stacksForCameraChange)
+            {
+                if (shouldChangeCamera)
+                {
+                    print("Less Than 10");
+                    changeCamera.SwitchCamera();
+                    shouldChangeCamera = false;
+                }
+            }
+        }
+        else
+        {
+            changeCamera.ChooseFarCamera();
+        }
+        
     }
 
     private void BobLogic()
