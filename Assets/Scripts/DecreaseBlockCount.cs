@@ -12,7 +12,7 @@ public class DecreaseBlockCount : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Detacher>())
+        if (other.GetComponent<DetacherBeach>())
         {
             if (!numOfstacksDecreased)
             {
