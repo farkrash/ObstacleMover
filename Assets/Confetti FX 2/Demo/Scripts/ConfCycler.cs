@@ -7,7 +7,6 @@ namespace Conf
 	
     public class ConfCycler : MonoBehaviour
     {
-		 #pragma warning disable 0649
         [SerializeField]
         List<GameObject> listOfEffects;
 
@@ -18,9 +17,8 @@ namespace Conf
         float timeOfLastInstantiate;
 
         GameObject instantiatedEffect;
-		
+
         int effectIndex = 0;
-		 #pragma warning restore 0649
 
         // Use this for initialization
         void Start()

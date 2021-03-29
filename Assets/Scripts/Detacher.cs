@@ -12,6 +12,7 @@ public class Detacher : MonoBehaviour
     private Vector3 destination;
     private bool shouldMoveCover = false;
     private bool detachedOnce = false;
+    [SerializeField] private GameObject confetti;
     private void Awake()
     {
         playerScript = FindObjectOfType<PlayerCoffinScript>();
@@ -39,6 +40,10 @@ public class Detacher : MonoBehaviour
             other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             shouldMoveCover = true;
             detachedOnce = true;
+            if(confetti != null)
+            {
+                confetti.SetActive(true);
+            }
         }
         if (other.gameObject.CompareTag("Player"))
         {

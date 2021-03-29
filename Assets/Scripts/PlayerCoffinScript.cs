@@ -88,6 +88,7 @@ public class PlayerCoffinScript : MonoBehaviour
                 animator2.SetBool("Throw", true);
                 animator3.SetBool("Throw", true);
                 animator4.SetBool("Throw", true);
+                
             }
             if (lunch)
             {
