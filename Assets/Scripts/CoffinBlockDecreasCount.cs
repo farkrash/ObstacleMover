@@ -17,7 +17,7 @@ public class CoffinBlockDecreasCount : MonoBehaviour
             if (!numOfstacksDecreased)
             {
                 player.numOfStacks--;
-                print(player.numOfStacks);
+
                 numOfstacksDecreased = true;
             }
         }

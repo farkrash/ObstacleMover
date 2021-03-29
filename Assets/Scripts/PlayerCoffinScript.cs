@@ -40,7 +40,8 @@ public class PlayerCoffinScript : MonoBehaviour
     private bool shouldChangeCamera = false;
     public bool stopMoving = false;
 
-
+    [Header("Confetti")]
+    [SerializeField] private GameObject confetti;
 
 
 
@@ -147,7 +148,7 @@ public class PlayerCoffinScript : MonoBehaviour
             {
                 if (!shouldChangeCamera)
                 {
-                    print("More Than 10");
+
                     changeCamera.SwitchCamera();
                     shouldChangeCamera = true;
                 }
@@ -156,7 +157,7 @@ public class PlayerCoffinScript : MonoBehaviour
             {
                 if (shouldChangeCamera)
                 {
-                    print("Less Than 10");
+                    
                     changeCamera.SwitchCamera();
                     shouldChangeCamera = false;
                 }
@@ -186,6 +187,7 @@ public class PlayerCoffinScript : MonoBehaviour
         animator2.SetBool("SwitchDance", false);
         animator3.SetBool("SwitchDance", false);
         animator4.SetBool("SwitchDance", false);
+        print("swithcDancceFalse");
     }
 
     private void ThrowCoffin()
@@ -195,12 +197,15 @@ public class PlayerCoffinScript : MonoBehaviour
 
     private void SwitchDance()
     {
+        print("switching");
         animator.SetBool("SwitchDance", true);
         animator2.SetBool("SwitchDance", true);
         animator3.SetBool("SwitchDance", true);
         animator4.SetBool("SwitchDance", true);
-        Invoke("SwitchDanceToFlase", 1f);
+        Invoke("SwitchDanceToFlase", 0.5f);
     }
+    
+    
 
     private void StopMovingWhenFall()
     {
