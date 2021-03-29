@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Fader : MonoBehaviour
 {
-    [SerializeField] private Material lowAlphaMat;
     [SerializeField] private float alphaReduceSpeed = 2f;
     
     private void OnTriggerStay(Collider other)

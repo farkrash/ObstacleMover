@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Player Config")]
     [SerializeField] private float moveSpeed = 15f;
     private Rigidbody rb;
+    private bool atEnd = false;
     
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
@@ -113,6 +114,31 @@ public class PlayerScript : MonoBehaviour
    
     private void CameraLogic()
     {
-        changeCamera.SwitchCamera();
+        if (!atEnd)
+        {
+            if (numOfStacks >= stacksForCameraChange)
+            {
+                if (!shouldChangeCamera)
+                {
+
+                    changeCamera.SwitchCamera();
+                    shouldChangeCamera = true;
+                }
+            }
+            if (numOfStacks < stacksForCameraChange)
+            {
+                if (shouldChangeCamera)
+                {
+                    
+                    changeCamera.SwitchCamera();
+                    shouldChangeCamera = false;
+                }
+            }
+        }
+        else
+        {
+            changeCamera.ChooseFarCamera();
+        }
+        
     }
 }
