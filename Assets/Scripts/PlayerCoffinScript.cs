@@ -15,7 +15,8 @@ public class PlayerCoffinScript : MonoBehaviour
     private bool atEnd = false;
     private bool lunch = false;
     private GameManager gameManager;
-
+    [SerializeField] private float moveBackwardsMax = 1f;
+    private float moveBackwardsStart = 0;
 
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
@@ -61,7 +62,6 @@ public class PlayerCoffinScript : MonoBehaviour
             BobLogic();
         }
         
-
     }
 
     private void PlayerMovment()
@@ -77,7 +77,19 @@ public class PlayerCoffinScript : MonoBehaviour
         }
         else
         {
+            moveBackwardsStart += Time.deltaTime;
             rb.constraints = RigidbodyConstraints.None;
+            animator.SetBool("Lose", true);
+            animator2.SetBool("Lose", true);
+            animator3.SetBool("Lose", true);
+            animator4.SetBool("Lose", true);
+            coffinHolder.transform.parent = null;
+            
+            if (moveBackwardsMax > moveBackwardsStart)
+            {
+                coffinHolder.transform.Rotate(Vector3.right * 1);
+                transform.Translate(Vector3.forward * (-5 * Time.deltaTime));
+            }
         }
         if (atEnd)
         {

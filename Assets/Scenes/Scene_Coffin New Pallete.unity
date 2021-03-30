@@ -94998,6 +94998,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3167528821060062072, guid: d4cc89de1d14616418c08425d213a95a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Blocks
+      objectReference: {fileID: 0}
     - target: {fileID: 7531391424642024291, guid: d4cc89de1d14616418c08425d213a95a,
         type: 3}
       propertyPath: m_LocalPosition.x
