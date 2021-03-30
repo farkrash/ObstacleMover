@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayParticles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayParticles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FollowForCameraBeach.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DetacherBeach.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectPoints.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayParticles.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -36,6 +38,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/DecreaseBlockCount.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayParticles.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pqF4SNfSWoCGLwFoiFRegiRMun" />
@@ -96,7 +99,7 @@
       <workItem from="1616657545652" duration="2336000" />
       <workItem from="1617023175803" duration="243000" />
       <workItem from="1617023538324" duration="1516000" />
-      <workItem from="1617084785310" duration="5513000" />
+      <workItem from="1617084785310" duration="6154000" />
     </task>
     <servers />
   </component>

@@ -6609,6 +6609,8 @@ GameObject:
   - component: {fileID: 154925295}
   - component: {fileID: 154925297}
   - component: {fileID: 154925296}
+  - component: {fileID: 154925299}
+  - component: {fileID: 154925298}
   m_Layer: 0
   m_Name: End Score Sign X3
   m_TagString: Untagged
@@ -6680,6 +6682,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154925294}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!65 &154925298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154925294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.669083, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.3613834, y: 2.2986107, z: 0.20121077}
+--- !u!114 &154925299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154925294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
 --- !u!1 &157068099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5565607083635568591, guid: 4b44703414248d8429b5cb20f08309f4,
@@ -14239,6 +14267,8 @@ GameObject:
   - component: {fileID: 330144945}
   - component: {fileID: 330144947}
   - component: {fileID: 330144946}
+  - component: {fileID: 330144948}
+  - component: {fileID: 330144949}
   m_Layer: 0
   m_Name: End Score Sign X7
   m_TagString: Untagged
@@ -14310,6 +14340,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330144944}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!114 &330144948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330144944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
+--- !u!65 &330144949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330144944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.794734, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 4.924207, y: 2.2986107, z: 0.20121077}
 --- !u!1001 &330162285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25790,6 +25846,8 @@ GameObject:
   - component: {fileID: 603266925}
   - component: {fileID: 603266927}
   - component: {fileID: 603266926}
+  - component: {fileID: 603266929}
+  - component: {fileID: 603266928}
   m_Layer: 0
   m_Name: End Score Sign X5
   m_TagString: Untagged
@@ -25861,6 +25919,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603266924}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!65 &603266928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603266924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.23048, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.1420836, y: 2.2986107, z: 0.20121077}
+--- !u!114 &603266929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603266924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
 --- !u!1 &604582067 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5565607083635568591, guid: 4b44703414248d8429b5cb20f08309f4,
@@ -30290,6 +30374,8 @@ GameObject:
   - component: {fileID: 718880980}
   - component: {fileID: 718880982}
   - component: {fileID: 718880981}
+  - component: {fileID: 718880983}
+  - component: {fileID: 718880984}
   m_Layer: 0
   m_Name: End Score Sign X9
   m_TagString: Untagged
@@ -30361,6 +30447,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718880979}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!114 &718880983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718880979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
+--- !u!65 &718880984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718880979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.847576, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.45063, y: 2.2986107, z: 0.20121077}
 --- !u!1001 &721131568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44357,6 +44469,8 @@ GameObject:
   - component: {fileID: 994991837}
   - component: {fileID: 994991839}
   - component: {fileID: 994991838}
+  - component: {fileID: 994991840}
+  - component: {fileID: 994991841}
   m_Layer: 0
   m_Name: End Score Sign X6
   m_TagString: Untagged
@@ -44428,6 +44542,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994991836}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!114 &994991840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994991836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
+--- !u!65 &994991841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994991836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.34098, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.1973343, y: 2.2986107, z: 0.20121077}
 --- !u!1001 &995830568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56243,6 +56383,8 @@ GameObject:
   - component: {fileID: 1274799464}
   - component: {fileID: 1274799466}
   - component: {fileID: 1274799465}
+  - component: {fileID: 1274799467}
+  - component: {fileID: 1274799468}
   m_Layer: 0
   m_Name: End Score Sign X10
   m_TagString: Untagged
@@ -56314,6 +56456,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274799463}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!114 &1274799467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274799463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
+--- !u!65 &1274799468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274799463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.683342, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.3685126, y: 2.2986107, z: 0.20121077}
 --- !u!1001 &1275517379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65320,6 +65488,8 @@ GameObject:
   - component: {fileID: 1522064328}
   - component: {fileID: 1522064330}
   - component: {fileID: 1522064329}
+  - component: {fileID: 1522064332}
+  - component: {fileID: 1522064331}
   m_Layer: 0
   m_Name: End Score Sign X4
   m_TagString: Untagged
@@ -65391,6 +65561,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522064327}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!65 &1522064331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522064327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.01381, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.0337467, y: 2.2986107, z: 0.20121077}
+--- !u!114 &1522064332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522064327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
 --- !u!1001 &1522644546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81902,6 +82098,8 @@ GameObject:
   - component: {fileID: 1877280143}
   - component: {fileID: 1877280145}
   - component: {fileID: 1877280144}
+  - component: {fileID: 1877280146}
+  - component: {fileID: 1877280147}
   m_Layer: 0
   m_Name: End Score Sign X8
   m_TagString: Untagged
@@ -81973,6 +82171,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877280142}
   m_Mesh: {fileID: 7353848530472409260, guid: e827b67ef4694a4459ae7fce00ef485a, type: 3}
+--- !u!114 &1877280146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877280142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
+--- !u!65 &1877280147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877280142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.993159, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 4.023422, y: 2.2986107, z: 0.20121077}
 --- !u!1001 &1879586697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94899,7 +95123,7 @@ PrefabInstance:
     - target: {fileID: 2251153081171767196, guid: 0ff2d01dec2ed0141862281f6e4bd53b,
         type: 3}
       propertyPath: stacksForCameraChange
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2251153081171767196, guid: 0ff2d01dec2ed0141862281f6e4bd53b,
         type: 3}
@@ -96320,6 +96544,8 @@ GameObject:
   - component: {fileID: 4300595936821281712}
   - component: {fileID: 864993139125357589}
   - component: {fileID: 3163187083878037727}
+  - component: {fileID: 3523250409248971020}
+  - component: {fileID: 3523250409248971019}
   m_Layer: 0
   m_Name: End Score Sign X2
   m_TagString: Untagged
@@ -96327,6 +96553,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3523250409248971019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523250409248971018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8eb7a568dabc1468fcebabe466e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystems: []
+--- !u!65 &3523250409248971020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523250409248971018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.560062, y: 4.5972214, z: 1.0685449}
+  m_Center: {x: 5.30687, y: 2.2986107, z: 0.20121077}
 --- !u!1 &3557007264024292626
 GameObject:
   m_ObjectHideFlags: 0
