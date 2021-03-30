@@ -74,6 +74,7 @@
           <e p="OnPlayerScript.cs" t="Include" />
           <e p="PlayerCoffinScript.cs" t="Include" />
           <e p="PlayerScript.cs" t="Include" />
+          <e p="PlayParticles.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="SpringLogic.cs" t="Include" />
         </e>

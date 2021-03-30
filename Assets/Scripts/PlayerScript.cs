@@ -27,6 +27,8 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private ChangeCamera changeCamera;
     private bool shouldChangeCamera = false;
     public bool stopMoving = false;
+
+    [SerializeField] private ParticleSystem[] particleSystems;
     
     
     
@@ -74,6 +76,10 @@ public class PlayerScript : MonoBehaviour
         if (other.gameObject.CompareTag("EndStopper"))
         {
             atEnd = true;
+            foreach (var particle in particleSystems)
+            {
+                particle.Play();
+            }
         }
     }
 
