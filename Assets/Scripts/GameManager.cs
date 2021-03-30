@@ -19,13 +19,21 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        scoreText.text = currentScore.ToString();
+        if (scoreText != null)
+        {
+            scoreText.text = currentScore.ToString();
+        }
+        
     }
     public void AddToScore()
     {
-        currentScore = currentScore + pointsPerCoinCollected;
-        scoreText.text = currentScore.ToString();
-        StartCoroutine(ScorePulse());
+        if (scoreText != null)
+        {
+            currentScore = currentScore + pointsPerCoinCollected;
+            scoreText.text = currentScore.ToString();
+            StartCoroutine(ScorePulse());
+        }
+        
     }
 
     public void ResetGame()
@@ -35,20 +43,24 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator ScorePulse()
     {
-        for (float i = 1f; i <= 1.4f; i += 0.05f)
+        if (scoreText != null)
         {
-            scoreText.rectTransform.localScale = new Vector3(i, i, i);
-            yield return new WaitForEndOfFrame();
-        }
-        scoreText.rectTransform.localScale = new Vector3(1.4f, 1.4f, 1.4f);
+            for (float i = 1f; i <= 1.4f; i += 0.05f)
+            {
+                scoreText.rectTransform.localScale = new Vector3(i, i, i);
+                yield return new WaitForEndOfFrame();
+            }
+            scoreText.rectTransform.localScale = new Vector3(1.4f, 1.4f, 1.4f);
 
-        for (float i = 1.4f; i >= 1f; i -= 0.05f)
-        {
-            scoreText.rectTransform.localScale = new Vector3(i, i, i);
-            yield return new WaitForEndOfFrame();
-        }
-        scoreText.rectTransform.localScale = new Vector3(1, 1, 1);
+            for (float i = 1.4f; i >= 1f; i -= 0.05f)
+            {
+                scoreText.rectTransform.localScale = new Vector3(i, i, i);
+                yield return new WaitForEndOfFrame();
+            }
+            scoreText.rectTransform.localScale = new Vector3(1, 1, 1);
 
+        }
+       
     }
 
 }

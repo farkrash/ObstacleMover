@@ -38,25 +38,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         PlayerMovment();
-        if (numOfStacks >= stacksForCameraChange)
-        {
-            if (!shouldChangeCamera)
-            {
-                print("More Than 10");
-                CameraLogic();
-                shouldChangeCamera = true;
-            }
-        }
-        if (numOfStacks < stacksForCameraChange)
-        {
-            if (shouldChangeCamera)
-            {
-                print("Less Than 10");
-                CameraLogic();
-                shouldChangeCamera = false;
-            }
-        }
-
+        CameraLogic();
     }
 
     private void PlayerMovment()
@@ -88,6 +70,10 @@ public class PlayerScript : MonoBehaviour
         {
             jump = true;
             Invoke("JumpToFalse", 1f);
+        }
+        if (other.gameObject.CompareTag("EndStopper"))
+        {
+            atEnd = true;
         }
     }
 

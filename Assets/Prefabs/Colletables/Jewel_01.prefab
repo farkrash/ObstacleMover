@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5077477124379424117}
   - component: {fileID: 8203598221889616592}
   - component: {fileID: 6214402713372937754}
+  - component: {fileID: 4503121821921617325}
   m_Layer: 0
   m_Name: Jewel_01
   m_TagString: Collectable
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4503121821921617325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565607083635568591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45934603, y: 1.0046166, z: 0.3978054}
+  m_Center: {x: 0, y: 0.5023083, z: -0.000000022351742}

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="" />
+    <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Colletables/Jewel_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Colletables/Jewel_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Mattress High.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Mattress High.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +28,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MoveTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ObstacleScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FollowForCameraBeach.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DecreaseBlockCount.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DetacherBeach.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CoffinCollectPoints.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CollectPoints.cs" />
@@ -31,6 +36,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ChangeCamera.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DecreaseBlockCount.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" />
     </changedPaths>
   </component>
@@ -91,7 +98,8 @@
       <workItem from="1616586555780" duration="7126000" />
       <workItem from="1616657545652" duration="2336000" />
       <workItem from="1617023175803" duration="243000" />
-      <workItem from="1617023538324" duration="774000" />
+      <workItem from="1617023538324" duration="1516000" />
+      <workItem from="1617084785310" duration="4112000" />
     </task>
     <servers />
   </component>
