@@ -77,6 +77,7 @@ public class PlayerCoffinScript : MonoBehaviour
         }
         else
         {
+            lunch = true;
             moveBackwardsStart += Time.deltaTime;
             rb.constraints = RigidbodyConstraints.None;
             animator.SetBool("Lose", true);
@@ -87,7 +88,7 @@ public class PlayerCoffinScript : MonoBehaviour
             
             if (moveBackwardsMax > moveBackwardsStart)
             {
-                coffinHolder.transform.Rotate(Vector3.right * 1);
+                coffinHolder.transform.Rotate(Vector3.forward * 1);
                 transform.Translate(Vector3.forward * (-5 * Time.deltaTime));
             }
         }
