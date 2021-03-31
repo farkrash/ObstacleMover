@@ -8,10 +8,13 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private float moveSpeed = 15f;
     private Rigidbody rb;
     private bool atEnd = false;
-    
+    [SerializeField] private Animator animator;
+    [SerializeField] private GameObject Girl;
+    private bool noRB = true;
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
+    
     
     [Header("Stacks Config")]
     [SerializeField] private GameObject stack;
@@ -52,6 +55,19 @@ public class PlayerScript : MonoBehaviour
         else
         {
             rb.constraints = RigidbodyConstraints.None;
+            if (!atEnd)
+            {
+                animator.SetBool("GotHit", true);
+                if (noRB)
+                {
+                    var rigidbody = Girl.AddComponent<Rigidbody>();
+                    Girl.transform.parent = null;
+                    rigidbody.AddForce(Vector3.up * 350);
+                    rigidbody.AddForce(Vector3.right * 200);
+                    rigidbody.AddForce(Vector3.forward * 300);
+                    noRB = false;
+                }
+            }
         }
     }
 
