@@ -68,7 +68,7 @@ public class PlayerCoffinScript : MonoBehaviour
     {
         if (!stopMoving)
         {
-            transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
+            // transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
 
             if (jump)
             {

@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 8287ef048d912a14c913d53a5339438d
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: TheDude_rigged(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: grp_def
+      parentName: TheDude_rigged(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_root
+      parentName: grp_def
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_hips
+      parentName: def_root
+      position: {x: -0, y: 0.5358988, z: 0.014911433}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_vert01
+      parentName: def_hips
+      position: {x: -0, y: 0.17327568, z: 0.008429223}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_vert02
+      parentName: def_vert01
+      position: {x: -0, y: 0.1554122, z: -0.0054919193}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_chest
+      parentName: def_vert02
+      position: {x: -0, y: 0.15005316, z: -0.0027459597}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_clavicle_r
+      parentName: def_chest
+      position: {x: 0.114999995, y: 0.09787486, z: 0.019569904}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_shoulder_r
+      parentName: def_clavicle_r
+      position: {x: 0.18472299, y: 0.0036952752, z: -0.018882582}
+      rotation: {x: 0.99977285, y: -0.017577099, z: -0.0005784004, w: -0.0120416945}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: def_elbow_r
+      parentName: def_shoulder_r
+      position: {x: 0.24525374, y: -0.0000012834105, z: -0.00000007288771}
+      rotation: {x: -0.0000041183084, y: 0.026656114, z: 0.000000059604645, w: 0.9996447}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: def_wrist_r
+      parentName: def_elbow_r
+      position: {x: 0.22298762, y: -0.000000028781528, z: -0.0031468507}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: def_clavicle_l
+      parentName: def_chest
+      position: {x: -0.11541262, y: 0.09787486, z: 0.019569904}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_shoulder_l
+      parentName: def_clavicle_l
+      position: {x: -0.1843099, y: 0.003698349, z: -0.018882537}
+      rotation: {x: 0.0038182277, y: -0.0002153799, z: 0.017613446, w: 0.99983764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_elbow_l
+      parentName: def_shoulder_l
+      position: {x: -0.24525712, y: 0.000000018294042, z: -2.815834e-10}
+      rotation: {x: -0.000000062864274, y: 0.007528537, z: 0.00000008037455, w: 0.99997175}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: def_wrist_l
+      parentName: def_elbow_l
+      position: {x: -0.22300892, y: 1.4210854e-16, z: 3.1086245e-17}
+      rotation: {x: -0.00000026281367, y: -0.38268358, z: -0.00000012101746, w: 0.92387944}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: def_neck
+      parentName: def_chest
+      position: {x: -0, y: 0.21205944, z: 0.008826496}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_head
+      parentName: def_neck
+      position: {x: -0, y: 0.11924156, z: 4.1995135e-10}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ik_uprLeg_l
+      parentName: def_hips
+      position: {x: -0.23915388, y: 0.000000011082067, z: -0.01620046}
+      rotation: {x: 0.46182224, y: 0.5354627, z: 0.4618222, w: 0.5354626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ik_lwrLeg_l
+      parentName: ik_uprLeg_l
+      position: {x: -0.31741205, y: -7.105427e-16, z: 3.5527136e-17}
+      rotation: {x: -0.9854417, y: -0.17001417, z: -0.000000029802322, w: -0.000000029802322}
+      scale: {x: 1, y: 0.9999999, z: 1.0000002}
+    - name: ik_ankle_l
+      parentName: ik_lwrLeg_l
+      position: {x: -0.18702309, y: -3.2754353e-15, z: -2.842171e-16}
+      rotation: {x: 0.6339889, y: 0.77334213, z: 0.0000000126687585, w: 0.0000000020287174}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ik_uprLeg_r
+      parentName: def_hips
+      position: {x: 0.239154, y: 0.00000019211234, z: -0.016200464}
+      rotation: {x: 0.5353351, y: -0.4618542, z: 0.53559065, w: -0.4617898}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ik_lwrLeg_r
+      parentName: ik_uprLeg_r
+      position: {x: 0.31741259, y: 0.00000006637362, z: -8.348877e-15}
+      rotation: {x: 0.98544157, y: 0.17001465, z: -0, w: 0.000000014901161}
+      scale: {x: 0.9999995, y: 0.99999976, z: 0.99999976}
+    - name: ik_ankle_r
+      parentName: ik_lwrLeg_r
+      position: {x: 0.18702276, y: -0.000000080039904, z: 0.000000008188637}
+      rotation: {x: -0.63398904, y: -0.773342, z: -0.000000014559488, w: -0.000000018321174}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: fk_uprLeg_l
+      parentName: def_hips
+      position: {x: -0.23915388, y: 0.000000011082067, z: -0.01620046}
+      rotation: {x: 0.46182224, y: 0.5354627, z: 0.46182224, w: 0.5354626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fk_lwrLeg_l
+      parentName: fk_uprLeg_l
+      position: {x: -0.31741205, y: -6.750156e-16, z: 3.5527135e-16}
+      rotation: {x: -0.9854417, y: -0.17001417, z: -0.000000059604645, w: -0.000000029802322}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: fk_ankle_l
+      parentName: fk_lwrLeg_l
+      position: {x: -0.18702309, y: -3.2676638e-15, z: -3.5527135e-16}
+      rotation: {x: 0.6339888, y: 0.77334225, z: -0.000000018463671, w: 0.00000006103036}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: fk_uprLeg_r
+      parentName: def_hips
+      position: {x: 0.239154, y: 0.00000019211234, z: -0.016200464}
+      rotation: {x: 0.5354626, y: -0.46182224, z: 0.5354627, w: -0.46182224}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: fk_lwrLeg_r
+      parentName: fk_uprLeg_r
+      position: {x: 0.31741259, y: 0.00000003553382, z: -7.105427e-17}
+      rotation: {x: 0.9854416, y: 0.17001416, z: 0.000000029802322, w: 0.000000059604645}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: fk_ankle_r
+      parentName: fk_lwrLeg_r
+      position: {x: 0.18702276, y: -0.00000011158331, z: 4.851856e-10}
+      rotation: {x: -0.63398886, y: -0.77334225, z: -0.00000004519455, w: 0.000000045320103}
+      scale: {x: 1.0000004, y: 1.000001, z: 1.0000002}
+    - name: def_uprLeg_r
+      parentName: def_hips
+      position: {x: 0.239154, y: 0.00000019211234, z: -0.016200464}
+      rotation: {x: 0.5353351, y: -0.4618542, z: 0.53559065, w: -0.4617898}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_lwrLeg_r
+      parentName: def_uprLeg_r
+      position: {x: 0.31741259, y: 0.00000006637362, z: -8.31335e-15}
+      rotation: {x: 0.98544157, y: 0.17001465, z: -0, w: 0.000000014901161}
+      scale: {x: 0.9999995, y: 0.99999976, z: 0.99999976}
+    - name: def_ankle_r
+      parentName: def_lwrLeg_r
+      position: {x: 0.18702276, y: -0.000000080039904, z: 0.000000008188637}
+      rotation: {x: -0.63398904, y: -0.773342, z: -0.0000000120948265, w: -0.000000017387839}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: def_uprLeg_l
+      parentName: def_hips
+      position: {x: -0.23915388, y: 0.000000011082067, z: -0.01620046}
+      rotation: {x: 0.46182224, y: 0.5354627, z: 0.4618222, w: 0.5354626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: def_lwrLeg_l
+      parentName: def_uprLeg_l
+      position: {x: -0.31741205, y: -7.549516e-16, z: 7.105427e-17}
+      rotation: {x: -0.9854417, y: -0.17001417, z: -0.000000029802322, w: -0.000000029802322}
+      scale: {x: 1, y: 0.9999999, z: 1.0000002}
+    - name: def_ankle_l
+      parentName: def_lwrLeg_l
+      position: {x: -0.18702309, y: -3.2429614e-15, z: -3.1974422e-16}
+      rotation: {x: 0.6339889, y: 0.77334213, z: 0.0000000126687585, w: 0.0000000020287174}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: geo_TheDude
+      parentName: TheDude_rigged(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

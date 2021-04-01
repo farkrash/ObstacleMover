@@ -15,6 +15,17 @@
             </e>
           </e>
         </e>
+        <e p="CrazyLabs" t="Include">
+          <e p="HC Characters" t="Include">
+            <e p="Joystick Controller" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="JoystickConfig.cs" t="Include" />
+                <e p="JoystickInputManager.cs" t="Include" />
+                <e p="MovementController.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="MobileDepthWater" t="Include">
           <e p="Scripts" t="Include">
             <e p="AnimationStarter.cs" t="Include" />
@@ -54,6 +65,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BikiniGirlRotationStopper.cs" t="Include" />
           <e p="BlockLogic.cs" t="Include" />
           <e p="BoatAnimations.cs" t="Include" />
           <e p="BobbingEffect.cs" t="Include" />
@@ -70,6 +82,7 @@
           <e p="GameManager.cs" t="Include" />
           <e p="HCAnimatorSpeed.cs" t="Include" />
           <e p="MoveTrigger.cs" t="Include" />
+          <e p="ObstacleMaster.cs" t="Include" />
           <e p="ObstacleScript.cs" t="Include" />
           <e p="OnPlayerScript.cs" t="Include" />
           <e p="PlayerCoffinScript.cs" t="Include" />
