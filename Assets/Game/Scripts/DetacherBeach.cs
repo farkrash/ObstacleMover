@@ -6,6 +6,7 @@ public class DetacherBeach : MonoBehaviour
 {
 
     private PlayerScript playerScript;
+    private bool calledSpawPointControll = false;
     private void Awake()
     {
         playerScript = FindObjectOfType<PlayerScript>();
@@ -15,7 +16,11 @@ public class DetacherBeach : MonoBehaviour
         if (other.gameObject.CompareTag("Blocks"))
         {
             other.transform.parent = transform.parent;
-            playerScript.SpawnPointControll();
+            if (!calledSpawPointControll)
+            {
+                playerScript.SpawnPointControll();
+                calledSpawPointControll = true;
+            }
             other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
         if (other.gameObject.CompareTag("Player"))

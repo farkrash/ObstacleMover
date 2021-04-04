@@ -112,7 +112,7 @@ public class PlayerScript : MonoBehaviour
     {
         stackSpawnPoint.transform.position = new Vector3(stackSpawnPoint.transform.position.x,
                 stackSpawnPoint.transform.position.y + spawnPointRaiseBy, stackSpawnPoint.transform.position.z);
-        
+        print("SpawnPontControll");
     }
    
     private void CameraLogic()
