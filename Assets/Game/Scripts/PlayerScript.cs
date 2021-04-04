@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour
 {
     [Header("Player Config")]
     [SerializeField] private float moveSpeed = 15f;
+    [SerializeField] private float horizontalMoveSpeed = 5f;
     private Rigidbody rb;
     private bool atEnd = false;
     [SerializeField] private Animator animator;
@@ -45,7 +46,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (!stopMoving)
         {
-            //transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
+            transform.Translate(Vector3.forward * (moveSpeed * Time.deltaTime));
 
             if (jump)
             {
@@ -69,6 +70,9 @@ public class PlayerScript : MonoBehaviour
                 }
             }
         }
+        float horizontalInput = Input.GetAxis("Horizontal");
+        transform.position = transform.position + new Vector3(horizontalInput * horizontalMoveSpeed * Time.deltaTime, 0 ,0);
+      
     }
 
     private void OnTriggerEnter(Collider other)
