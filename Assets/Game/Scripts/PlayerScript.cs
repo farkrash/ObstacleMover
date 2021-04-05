@@ -75,6 +75,7 @@ public class PlayerScript : MonoBehaviour
             else
             {
                 animator.SetBool("atEnd", true);
+                Girl.transform.Rotate( new Vector3(Girl.transform.rotation.x, Girl.transform.rotation.y- 1 , Girl.transform.rotation.z));
             }
         }
         float horizontalInput = Input.GetAxis("Horizontal");
