@@ -12,6 +12,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject Girl;
     private bool noRB = true;
+    [SerializeField] private GameObject trail;
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
@@ -56,6 +57,7 @@ public class PlayerScript : MonoBehaviour
         else
         {
             rb.constraints = RigidbodyConstraints.None;
+            trail.SetActive(false);
             if (!atEnd)
             {
                 animator.SetBool("GotHit", true);

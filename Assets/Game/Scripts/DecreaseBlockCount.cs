@@ -17,7 +17,7 @@ public class DecreaseBlockCount : MonoBehaviour
             if (!numOfstacksDecreased)
             {
                 player.numOfStacks--;
-                print(player.numOfStacks);
+
                 numOfstacksDecreased = true;
             }
         }

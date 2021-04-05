@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6369605842171330789}
   - component: {fileID: 521678819147012875}
   - component: {fileID: 8863960347676901667}
+  - component: {fileID: 5393651158587577150}
   m_Layer: 0
   m_Name: Player_Stacks_ColorFullMattress
   m_TagString: Blocks
@@ -48,7 +49,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 114
+  m_Constraints: 98
   m_CollisionDetection: 0
 --- !u!65 &521678819147012875
 BoxCollider:
@@ -76,6 +77,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!114 &5393651158587577150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4103105903531246803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625ca31c0a8551c4bbdb4e299ce49246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRot: 1
 --- !u!1001 &8619264449600403071
 PrefabInstance:
   m_ObjectHideFlags: 0
