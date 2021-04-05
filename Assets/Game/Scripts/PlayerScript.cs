@@ -41,6 +41,7 @@ public class PlayerScript : MonoBehaviour
     {
         PlayerMovment();
         CameraLogic();
+        print(atEnd);
     }
 
     private void PlayerMovment()
@@ -70,6 +71,10 @@ public class PlayerScript : MonoBehaviour
                     rigidbody.AddForce(Vector3.forward * 300);
                     noRB = false;
                 }
+            }
+            else
+            {
+                animator.SetBool("atEnd", true);
             }
         }
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -119,6 +124,7 @@ public class PlayerScript : MonoBehaviour
    
     private void CameraLogic()
     {
+        /*
         if (!atEnd)
         {
             if (numOfStacks >= stacksForCameraChange)
@@ -144,6 +150,7 @@ public class PlayerScript : MonoBehaviour
         {
             changeCamera.ChooseFarCamera();
         }
-        
+         */
     }
+
 }
