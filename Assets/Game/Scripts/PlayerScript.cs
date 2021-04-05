@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
-    
+    private float rotationForGirl = 15;
     
     [Header("Stacks Config")]
     [SerializeField] private GameObject stack;
@@ -75,7 +75,8 @@ public class PlayerScript : MonoBehaviour
             else
             {
                 animator.SetBool("atEnd", true);
-                Girl.transform.Rotate( new Vector3(Girl.transform.rotation.x, Girl.transform.rotation.y- 1 , Girl.transform.rotation.z));
+                Girl.transform.Rotate( new Vector3(0, rotationForGirl, 0));
+                Invoke("RotationToZero", 0.1f);
             }
         }
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -153,5 +154,8 @@ public class PlayerScript : MonoBehaviour
         }
          */
     }
-
+    private void RotationToZero()
+    {
+        rotationForGirl = 0f;
+    }
 }
