@@ -76,6 +76,14 @@ public class PlayerScript : MonoBehaviour
                 animator.SetBool("atEnd", true);
                 Girl.transform.Rotate( new Vector3(0, rotationForGirl, 0));
                 Invoke("RotationToZero", 0.1f);
+                if (noRB)
+                {
+                    var rigidbody = Girl.AddComponent<Rigidbody>();
+                    Girl.transform.parent = null;
+                    rigidbody.AddForce(Vector3.up * 300);
+                    rigidbody.AddForce(Vector3.forward * 200);
+                    noRB = false;
+                }
             }
         }
         float horizontalInput = Input.GetAxis("Horizontal");

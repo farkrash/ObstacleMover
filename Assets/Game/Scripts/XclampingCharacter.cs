@@ -11,7 +11,6 @@ public class XclampingCharacter : MonoBehaviour
     private void Awake()
     {
         playerScript = FindObjectOfType<PlayerScript>();
-        rb = GetComponent<Rigidbody>();
     }
     private void Start()
     {
@@ -21,9 +20,7 @@ public class XclampingCharacter : MonoBehaviour
     {
         if(playerScript.numOfStacks > 1)
         {
-            rb.constraints = RigidbodyConstraints.FreezeRotationX;
-            rb.constraints = RigidbodyConstraints.FreezeRotationY;
-            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
         }
         if(playerScript.numOfStacks < 2)
         {
