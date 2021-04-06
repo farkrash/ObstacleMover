@@ -13,10 +13,11 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private GameObject Girl;
     private bool noRB = true;
     [SerializeField] private GameObject trail;
+    
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
-    private float rotationForGirl = 15;
+    private float rotationForGirl = 10f;
     
     [Header("Stacks Config")]
     [SerializeField] private GameObject stack;
