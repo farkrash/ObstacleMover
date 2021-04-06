@@ -41,7 +41,6 @@ public class PlayerScript : MonoBehaviour
     {
         PlayerMovment();
         CameraLogic();
-        print(atEnd);
     }
 
     private void PlayerMovment()
@@ -99,6 +98,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.CompareTag("EndStopper"))
         {
+            moveSpeed = 7.5f;
             atEnd = true;
         }
     }
@@ -126,9 +126,10 @@ public class PlayerScript : MonoBehaviour
    
     private void CameraLogic()
     {
-        /*
+        
         if (!atEnd)
         {
+            /*
             if (numOfStacks >= stacksForCameraChange)
             {
                 if (!shouldChangeCamera)
@@ -147,12 +148,13 @@ public class PlayerScript : MonoBehaviour
                     shouldChangeCamera = false;
                 }
             }
+            */
         }
         else
         {
             changeCamera.ChooseFarCamera();
         }
-         */
+         
     }
     private void RotationToZero()
     {

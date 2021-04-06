@@ -78,6 +78,9 @@
             <e p="PlayParticles.cs" t="Include" />
             <e p="SimpleCameraController.cs" t="Include" />
             <e p="SpringLogic.cs" t="Include" />
+            <e p="TrailFollow.cs" t="Include" />
+            <e p="Xclamping.cs" t="Include" />
+            <e p="XclampingCharacter.cs" t="Include" />
           </e>
         </e>
         <e p="MobileDepthWater" t="Include">
