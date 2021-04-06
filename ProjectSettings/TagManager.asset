@@ -10,6 +10,8 @@ TagManager:
   - Player Holder
   - EndStopper
   - Collectable
+  - Bouncy Castle Entrance
+  - Bouncy Castle Exit
   layers:
   - Default
   - TransparentFX
