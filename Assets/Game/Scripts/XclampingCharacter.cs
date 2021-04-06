@@ -18,6 +18,7 @@ public class XclampingCharacter : MonoBehaviour
     }
     private void Update()
     {
+        
         if(playerScript.numOfStacks > 1)
         {
             rb.constraints = RigidbodyConstraints.FreezeRotation;
@@ -29,7 +30,7 @@ public class XclampingCharacter : MonoBehaviour
         if (atBouncyCastle)
         {
             BackToOGConstraints();
-            transform.eulerAngles = new Vector3(ClampAngle(transform.eulerAngles.x, -20, 20), 0, 0);
+            transform.eulerAngles = new Vector3(ClampAngle(transform.eulerAngles.x, -30, 30), 0, 0);
         }
     }
     public static float ClampAngle(float angle, float min, float max)

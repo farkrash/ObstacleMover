@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Confetti FX 2/Upgrade/Confetti FX 2 HDRP Upgrade (2019.3.1f1).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Confetti FX 2/Upgrade/Confetti FX 2 URP Upgrade (2019.3.1f1).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FadeObstructions/Reyn/Visual/Fade/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Scene_Sea And Colorful Mattress.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Scene_Sea And Colorful Mattress.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animators/BikiniGirl_animator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animators/BikiniGirl_animator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/XclampingCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/XclampingCharacter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/FollowForCameraBeach.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/XclampingCharacter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pqF4SNfSWoCGLwFoiFRegiRMun" />
@@ -105,7 +104,8 @@
       <workItem from="1617529487832" duration="1024000" />
       <workItem from="1617697369355" duration="2449000" />
       <workItem from="1617707301512" duration="1000" />
-      <workItem from="1617707834489" duration="338000" />
+      <workItem from="1617707834489" duration="1127000" />
+      <workItem from="1617710519285" duration="890000" />
     </task>
     <servers />
   </component>
