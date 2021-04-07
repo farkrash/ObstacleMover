@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8203598221889616592}
   - component: {fileID: 6214402713372937754}
   - component: {fileID: 4503121821921617325}
+  - component: {fileID: 7689201498518433173}
   m_Layer: 0
   m_Name: Jewel_01
   m_TagString: Collectable
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ce511f1c0ce8b9a4a892f1b3a77c7f2b, type: 2}
+  - {fileID: 2100000, guid: 35e72a5ec70b04c448d95b0bfd393dfc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,3 +94,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.45934603, y: 1.0046166, z: 0.3978054}
   m_Center: {x: 0, y: 0.5023083, z: -0.000000022351742}
+--- !u!95 &7689201498518433173
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565607083635568591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68d334e1844926a4f996533ad859311f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
