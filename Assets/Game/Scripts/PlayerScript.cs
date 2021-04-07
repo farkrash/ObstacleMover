@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private ChangeCamera changeCamera;
     private bool shouldChangeCamera = false;
     public bool stopMoving = false;
-    
+    private bool switchedCamera = false;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -42,6 +42,7 @@ public class PlayerScript : MonoBehaviour
     {
         PlayerMovment();
         CameraLogic();
+        print(noRB + "noRB");
     }
 
     private void PlayerMovment()
@@ -83,7 +84,9 @@ public class PlayerScript : MonoBehaviour
                     Girl.transform.parent = null;
                     rigidbody.AddForce(Vector3.up * 300);
                     rigidbody.AddForce(Vector3.forward * 200);
+                    changeCamera.SwitchCamera();
                     noRB = false;
+                    
                 }
             }
         }
@@ -161,7 +164,11 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            changeCamera.ChooseFarCamera();
+            if (!switchedCamera)
+            {
+                changeCamera.SwitchCamera();
+                switchedCamera = true;
+            }
         }
          
     }
