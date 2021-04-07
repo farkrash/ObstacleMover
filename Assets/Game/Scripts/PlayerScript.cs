@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private GameObject Girl;
     private bool noRB = true;
     [SerializeField] private GameObject trail;
+    [SerializeField] private BoxCollider playerBoxCollider;
     
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
@@ -37,12 +38,12 @@ public class PlayerScript : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        playerBoxCollider.enabled = false;
     }
     void Update()
     {
         PlayerMovment();
         CameraLogic();
-        print(noRB + "noRB");
     }
 
     private void PlayerMovment()
@@ -75,15 +76,17 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
+                
                 animator.SetBool("atEnd", true);
                 Girl.transform.Rotate( new Vector3(0, rotationForGirl, 0));
                 Invoke("RotationToZero", 0.1f);
                 if (noRB)
                 {
                     var rigidbody = Girl.AddComponent<Rigidbody>();
+                    playerBoxCollider.enabled = true;
                     Girl.transform.parent = null;
                     rigidbody.AddForce(Vector3.up * 300);
-                    rigidbody.AddForce(Vector3.forward * 200);
+                    rigidbody.AddForce(Vector3.forward * 100);
                     changeCamera.SwitchCamera();
                     noRB = false;
                     
