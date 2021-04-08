@@ -14,7 +14,8 @@ public class PlayerScript : MonoBehaviour
     private bool noRB = true;
     [SerializeField] private GameObject trail;
     [SerializeField] private BoxCollider playerBoxCollider;
-    
+    [SerializeField] GameObject cocktail;
+
     [Header("Jump Config")]
     [SerializeField] private bool jump = false;
     [SerializeField] private float jumpForce = 15f;
@@ -66,6 +67,7 @@ public class PlayerScript : MonoBehaviour
                 animator.SetBool("GotHit", true);
                 if (noRB)
                 {
+                    cocktail.SetActive(false);
                     var rigidbody = Girl.AddComponent<Rigidbody>();
                     Girl.transform.parent = null;
                     rigidbody.AddForce(Vector3.up * 350);
@@ -82,6 +84,7 @@ public class PlayerScript : MonoBehaviour
                 Invoke("RotationToZero", 0.1f);
                 if (noRB)
                 {
+                    cocktail.SetActive(false);
                     var rigidbody = Girl.AddComponent<Rigidbody>();
                     playerBoxCollider.enabled = true;
                     Girl.transform.parent = null;
