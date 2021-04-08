@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6eeacf1-8939-4cf4-bc7f-2bd42a82f4aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ObstacleMover/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Confetti FX 2/Upgrade/Confetti FX 2 HDRP Upgrade (2019.3.1f1).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Confetti FX 2/Upgrade/Confetti FX 2 URP Upgrade (2019.3.1f1).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FadeObstructions/Reyn/Visual/Fade/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/FBX/Pool Bouncy Castle Obgjects/Bouncy Castle Mat 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/FBX/Pool Bouncy Castle Obgjects/Bouncy Castle Mat 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/FBX/Pool Bouncy Castle Obgjects/Bouncy Castle Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/FBX/Pool Bouncy Castle Obgjects/Bouncy Castle Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Fade/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ADG_Textures/Foam Textures/foam2/foam2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ADG_Textures/Foam Textures/foam2/foam2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player/Player_Stacks_ColorFullMattress.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player/Player_Stacks_ColorFullMattress.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Stacks/Collectable_Stacks_ColorfullMattress.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Stacks/Collectable_Stacks_ColorfullMattress.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Scene_Sea And Colorful Mattress.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Scene_Sea And Colorful Mattress.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Fader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Fader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/movie_012.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/movie_013.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/movie_014.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/movie_028.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +38,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCoffinScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/FollowForCameraBeach.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/XclampingCharacter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/Fader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/PlayerScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pqF4SNfSWoCGLwFoiFRegiRMun" />
@@ -120,6 +111,7 @@
       <workItem from="1617710519285" duration="890000" />
       <workItem from="1617781490785" duration="450000" />
       <workItem from="1617786010965" duration="1556000" />
+      <workItem from="1617863964697" duration="1000000" />
     </task>
     <servers />
   </component>

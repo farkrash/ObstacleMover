@@ -86,7 +86,7 @@ public class PlayerScript : MonoBehaviour
                     playerBoxCollider.enabled = true;
                     Girl.transform.parent = null;
                     rigidbody.AddForce(Vector3.up * 300);
-                    rigidbody.AddForce(Vector3.forward * 100);
+                    rigidbody.AddForce(Vector3.forward * 250); // IF AT TOP SET TO 250, set to 150 if not at top
                     changeCamera.SwitchCamera();
                     noRB = false;
                     
